@@ -7,6 +7,15 @@ This is a extended starterpack that includes Electron support so that you can de
 4. Then call `yarn package-mac` or `yarn package-win`. This starterpack was created on mac so windows users might need to change some bash commands to their windows equivalents. It is recommended for windows users to make the electron starterpack using their own already existing starterpacks with the instructions below to prevent these issues. 
 5. After calling the package command you will see a folder called release builds. That is where you will find your packaged app. Navigate to the app using the file manager and open it to use. 
 
+## Instructions for making one of your labs into an electron app
+
+*Note: This was tested with Lab 3 React Notes app.*
+
+0. Clone this repo (follow above steps, make sure they work for you).
+1. Take the javascript source files (files in `src` directory of your lab) and copy-paste them (overwriting current files) into the `src` folder of the cloned Electron-starter-pack
+2. `yarn add` all the relevant dependencies you needed for that lab.
+3. Try `yarn winbuild`, if it works, then call `yarn package-win` and find the app in a subfolder of the release builds folder.
+
 ## Instructions for adding electron support to your already existing starterpack or webapp
 
 1. First clone your starterpack to your terminal from github. 
