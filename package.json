@@ -10,6 +10,7 @@
     "start": "NODE_ENV=development webpack-dev-server",
     "test": "eslint src/**.js",
     "build": "yarn clean; NODE_ENV=production webpack --colors",
+    "winbuild": "yarn clean & SET NODE_ENV=production& webpack --colors",
     "clean": "rimraf dist",
     "deploy": "yarn build; surge -p dist -d bibaswankhadka-cs52-electronstarter.surge.sh; yarn clean",
     "electron-dev": "concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:8080 && electron .\"",
